@@ -1,0 +1,24 @@
+<div class="active-storage">
+  <% if attachment.attached? %>
+    <div class="active-storage__preview">
+      <% if attachment.blob.image? %>
+        <%= link_to image_tag(attachment.blob.service_url, class: 'active-storage__image'),
+            attachment.blob.service_url, target: 'blank' %>
+      <% else %>
+        <%= link_to(attachment.blob.service_url, class: 'active-storage__link') %>
+      <% end %>
+    </div>
+
+    <%= link_to('Delete Attachment',
+                active_storage_attachment_admin_path(attachment.id, params: { redirect_to: request.path }),
+                class: 'btn btn-danger',
+                method: :delete,
+                data: { confirm: 'Are you sure you want to delete and purge this attachment?'}) %>
+  <% end %>
+
+  <div class="progress" style="display: none">
+    <div class="progress-bar progress-bar-striped active"></div>
+  </div>
+
+  <%= builder.raw_file_field(field_name, class: 'active-storage__field', direct_upload: true) %>
+</div>
