@@ -1,16 +1,14 @@
 module Trestle
   module ActiveStorage
     class Field < Trestle::Form::Field
-      def field
-        fields = Rails.cache.read(:active_storage_fields) || []
-        fields << name
-        Rails.cache.write(:active_storage_fields, fields.uniq)
+      include AttachmentHelper
 
+      def field
         instance = builder.object
         attachment = instance.send(name)
 
+        add_attachment_field(name)
         instance.class.send(:attr_accessor, "delete_#{name}")
-
         @template.render partial: 'trestle/active_storage/field',
                          locals: {
                            builder: builder,
