@@ -9,11 +9,7 @@
       <% end %>
     </div>
 
-    <%= link_to('Delete Attachment',
-                active_storage_attachment_admin_path(attachment.id, params: { redirect_to: request.path }),
-                class: 'btn btn-danger',
-                method: :delete,
-                data: { confirm: 'Are you sure you want to delete and purge this attachment?'}) %>
+    <%= builder.check_box("delete_#{field_name}", label: "Delete #{field_name}") %>
   <% end %>
 
   <div class="progress" style="display: none">
