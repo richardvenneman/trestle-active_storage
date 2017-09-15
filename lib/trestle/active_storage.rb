@@ -1,4 +1,11 @@
 require 'trestle'
 require 'trestle/active_storage/version'
 require 'trestle/active_storage/engine'
-require 'active_storage'
+
+module Trestle
+  module ActiveStorage
+    extend ActiveSupport::Autoload
+
+    autoload :ControllerConcern
+  end
+end
