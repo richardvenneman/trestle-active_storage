@@ -1,8 +1,13 @@
 module Trestle
   module ActiveStorage
     module AttachmentHelper
-      def add_attachment_field(name)
-        fields = attachment_fields.concat([name]).uniq
+      def attach_field(instance, field_name)
+        instance.class.send(:attr_accessor, "delete_#{field_name}")
+        add_attachment_field(field_name)
+      end
+
+      def add_attachment_field(field_name)
+        fields = attachment_fields.concat([field_name]).uniq
         Rails.cache.write(:active_storage_fields, fields)
       end
 

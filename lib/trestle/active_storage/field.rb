@@ -7,8 +7,7 @@ module Trestle
         instance = builder.object
         attachment = instance.send(name)
 
-        add_attachment_field(name)
-        instance.class.send(:attr_accessor, "delete_#{name}")
+        attach_field(instance, name)
         @template.render partial: 'trestle/active_storage/field',
                          locals: {
                            builder: builder,
