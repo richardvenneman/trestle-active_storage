@@ -5,8 +5,8 @@ module Trestle
       include AttachmentHelper
 
       included do
-        after_action :delete_attachments, only: %i[update]
-        after_action :set_attachments, only: %i[create update]
+        after_action :delete_attachments, only: %i[update], unless: :trestle_auth_controller?
+        after_action :set_attachments, only: %i[create update], unless: :trestle_auth_controller?
       end
 
       protected
@@ -25,6 +25,10 @@ module Trestle
         attachment_fields.each do |field|
           instance.send(field).purge if instance.send("delete_#{field}") == '1'
         end
+      end
+
+      def trestle_auth_controller?
+        self.class == Trestle::Auth::SessionsController
       end
     end
   end
