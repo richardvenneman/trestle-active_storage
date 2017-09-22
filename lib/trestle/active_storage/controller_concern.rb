@@ -7,7 +7,7 @@ module Trestle
       included do
         before_action :delete_attachments, only: %i[update], unless: :trestle_auth_controller?
         before_action :set_attachments, only: %i[create update], unless: :trestle_auth_controller?
-        after_action :reset_attachment_fields, only: %i[create update], unless: :trestle_auth_controller?
+        after_action :reset_attachment_fields, unless: :trestle_auth_controller?
       end
 
       protected
