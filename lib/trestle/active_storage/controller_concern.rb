@@ -4,9 +4,9 @@ module Trestle
       extend ActiveSupport::Concern
 
       included do
-        before_action :define_attachment_accessors, unless: :trestle_auth_controller?
-        after_action :set_attachments, only: %i[create update], unless: :trestle_auth_controller?
-        after_action :delete_attachments, only: %i[update], unless: :trestle_auth_controller?
+        before_action :define_attachment_accessors, except: [:index, :new], if: :trestle_resource_controller?
+        after_action :set_attachments, only: %i[create update], if: :trestle_resource_controller?
+        after_action :delete_attachments, only: %i[update], if: :trestle_resource_controller?
       end
 
       protected
@@ -39,8 +39,8 @@ module Trestle
         Trestle.config.active_storage.fields.try(:[], instance.class.to_s) || []
       end
 
-      def trestle_auth_controller?
-        self.class == Trestle::Auth::SessionsController
+      def trestle_resource_controller?
+        self.class.superclass == Trestle::Resource::Controller
       end
     end
   end
