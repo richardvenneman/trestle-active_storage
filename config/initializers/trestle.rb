@@ -1,6 +1,10 @@
 require 'trestle/active_storage/field'
 
 Trestle.configure do |config|
+  config.active_storage.configure do |c|
+    c.fields = {}
+  end
+
   config.hook(:javascripts) do
     javascript_include_tag('activestorage') +
       javascript_include_tag('trestle/active_storage_fields.js')
