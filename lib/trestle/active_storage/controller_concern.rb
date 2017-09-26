@@ -4,7 +4,7 @@ module Trestle
       extend ActiveSupport::Concern
 
       included do
-        before_action :define_attachment_accessors, except: [:index, :new], if: :trestle_resource_controller?
+        before_action :define_attachment_accessors, except: [:index, :new, :create], if: :trestle_resource_controller?
         after_action :set_attachments, only: %i[create update], if: :trestle_resource_controller?
         after_action :delete_attachments, only: %i[update], if: :trestle_resource_controller?
       end
