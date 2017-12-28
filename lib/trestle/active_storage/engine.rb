@@ -5,7 +5,7 @@ module Trestle
 
       initializer :extensions do
         Trestle::Resource::Builder.send(:include, Trestle::ActiveStorage::Builder)
-        Trestle::ApplicationController.send(:include, Trestle::ActiveStorage::ControllerConcern)
+        Trestle::Resource::Controller.send(:include, Trestle::ActiveStorage::ControllerConcern)
       end
     end
   end
