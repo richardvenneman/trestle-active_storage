@@ -1,6 +1,5 @@
-require 'trestle'
 require 'trestle/active_storage/version'
-require 'trestle/active_storage/engine' if defined?(Rails)
+require 'trestle'
 
 module Trestle
   module ActiveStorage
@@ -8,5 +7,8 @@ module Trestle
 
     autoload :Builder
     autoload :ControllerConcern
+    autoload :Resource
   end
 end
+
+require 'trestle/active_storage/engine' if defined?(Rails)
