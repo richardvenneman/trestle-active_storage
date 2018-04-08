@@ -4,12 +4,17 @@ module Trestle
       extend ActiveSupport::Concern
 
       included do
-        before_action :define_attachment_accessors, except: [:index, :new, :create]
+        before_action :delete_attachment_params, only: [:create, :update]
+        before_action :define_attachment_accessors, only: [:edit, :update]
         after_action :set_attachments, only: %i[create update]
         after_action :delete_attachments, only: %i[update]
       end
 
       protected
+
+      def delete_attachment_params
+        admin.active_storage_fields.each { |field| params.delete(field) }
+      end
 
       def define_attachment_accessors
         self.instance = admin.find_instance(params)

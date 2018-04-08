@@ -6,45 +6,21 @@
 
 ## Usage
 
-Using this plugin currently involves 3 steps:
-
-1. Use the `active_storage_field` field_type
-2. Configure the plugin
-3. Remove the field attribute from Trestle's `update_instance`
-
-### 1. Use the `active_storage_field` field_type
-
-To add an ActiveStorage file field to your form, use the `active_storage_field` field type:
+Define the active storage fields in your Trestle resource and use the `active_storage_field` field type:
 
 ```ruby
 Trestle.resource(:users) do
-  form do |user|
-    active_storage_field :avatar
-  end
-end
-```
-
-### 2. Configure the plugin
-
-To enable ActiveStorage capabilities within an admin resource, specify the `active_storage_fields` block:
-
-```ruby
-Trestle.resource(:articles) do
   active_storage_fields do
-    [:header, :thumbnail]
+    [:avatar, :profile_picture]
+  end
+
+  form do |user|
+    text_field :first_name
+    text_field :last_name
+    active_storage_field :avatar
+    active_storage_field :profile_picture
   end
 end
-```
-
-### 3. Remove attributes
-
-In order to override Trestle's default update mechanism, remove the attachment attributes from your admin configurations:
-
-```ruby
-Trestle.resource(:users) do
-  update_instance do |instance, params|
-    instance.update_attributes(params.except(:avatar))
-  end
 ```
 
 ## Installation
