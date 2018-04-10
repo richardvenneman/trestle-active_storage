@@ -2,10 +2,10 @@
   <% if attachment.attached? %>
     <div class="active-storage__preview">
       <% if attachment.blob.image? %>
-        <%= link_to image_tag(attachment.blob.service_url, class: 'active-storage__image'),
-            attachment.blob.service_url, target: 'blank' %>
+        <%= link_to image_tag(main_app.rails_blob_url(attachment), class: 'active-storage__image'),
+            main_app.rails_blob_url(attachment), target: 'blank' %>
       <% else %>
-        <%= link_to(attachment.blob.service_url, class: 'active-storage__link') %>
+        <%= link_to(main_app.rails_blob_url(attachment), class: 'active-storage__link') %>
       <% end %>
     </div>
 
