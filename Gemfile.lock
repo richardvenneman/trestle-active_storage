@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    trestle-active_storage (0.0.1.pre.5)
+    trestle-active_storage (0.0.1.pre.7)
       rails (>= 5.2.0.beta2, < 6)
       trestle (~> 0.8)
 
@@ -60,7 +60,7 @@ GEM
     ffi (1.9.23)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (1.0.0)
+    i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     kaminari (1.1.1)
       activesupport (>= 4.1.0)
