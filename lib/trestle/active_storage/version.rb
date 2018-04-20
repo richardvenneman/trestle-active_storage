@@ -1,5 +1,5 @@
 module Trestle
   module ActiveStorage
-    VERSION = '0.0.1.pre.7'
+    VERSION = '0.0.1.pre.8'
   end
 end
