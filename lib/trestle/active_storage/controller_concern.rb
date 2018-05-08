@@ -4,7 +4,7 @@ module Trestle
       extend ActiveSupport::Concern
 
       included do
-        before_action :define_attachment_accessors, only: [:edit, :destroy]
+        before_action :define_attachment_accessors, only: [:show, :edit, :destroy]
         before_action :delete_attachment_params, only: [:create, :update]
         before_action :attach_attachments, only: [:create, :update]
         after_action :purge_attachments, only: [:update]
