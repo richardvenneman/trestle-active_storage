@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    trestle-active_storage (0.0.1.pre.11)
+    trestle-active_storage (0.0.1.pre.12)
       rails (>= 5.2.0.beta2, < 6)
       trestle (~> 0.8)
 
@@ -50,7 +50,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (9.0.0)
-    autoprefixer-rails (8.4.1)
+    autoprefixer-rails (8.5.0)
       execjs
     builder (3.2.3)
     concurrent-ruby (1.0.5)
