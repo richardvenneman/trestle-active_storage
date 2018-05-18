@@ -25,6 +25,7 @@ module Trestle
       end
 
       def attach_attachments
+        instance = admin.build_instance(permitted_params, params)
         instance_params = admin.permitted_params(params)
 
         admin.active_storage_fields.each do |field|
