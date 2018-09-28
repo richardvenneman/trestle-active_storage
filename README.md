@@ -2,6 +2,8 @@
 
 > [ActiveStorage](https://github.com/rails/rails/tree/master/activestorage#active-storage) integration plugin for the [Trestle admin framework](https://trestle.io)
 
+[![Gem](https://img.shields.io/gem/v/trestle-active_storage.svg)](https://rubygems.org/gems/trestle-active_storage)
+
 ## Usage
 
 Define the active storage fields in your Trestle resource and use the `active_storage_field` field type:
