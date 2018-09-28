@@ -1,6 +1,6 @@
 # Trestle ActiveStorage Integration (trestle-active_storage)
 
-> [ActiveStorage](https://github.com/rails/rails/tree/master/activestorage#active-storage) integration plugin for the [Trestle admin framework](https://trestle.io)
+> [ActiveStorage](https://guides.rubyonrails.org/active_storage_overview.html) integration plugin for the [Trestle admin framework](https://trestle.io)
 
 [![Gem](https://img.shields.io/gem/v/trestle-active_storage.svg)](https://rubygems.org/gems/trestle-active_storage)
 
@@ -33,7 +33,7 @@ gem 'trestle-active_storage'
 
 Run `bundle install`, and then restart your Rails server.
 
-## Wishlist
+## TODO / Wishlist
 
 - [ ] Support for `has_many_attached` attachments
 - [ ] Support for [ActiveStorage previews](https://api.rubyonrails.org/v5.2/classes/ActiveStorage/Previewer.html)
