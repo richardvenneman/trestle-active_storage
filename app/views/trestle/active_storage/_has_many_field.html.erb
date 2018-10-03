@@ -1,0 +1,26 @@
+<div class='nested-fields-container'>
+  <%= builder.fields_for :images do %>
+    <div class="active-storage">
+      <% if attachments.attached? %>
+        <% attachments.each do |attachment| %>
+          <div class="active-storage__preview">
+            <% if attachment.blob.image? %>
+              <%= link_to image_tag(main_app.rails_blob_url(attachment), class: 'active-storage__image'),
+                  main_app.rails_blob_url(attachment), target: 'blank' %>
+            <% else %>
+              <%= link_to(main_app.rails_blob_url(attachment), class: 'active-storage__link') %>
+            <% end %>
+          </div>
+
+          <label><%= attachment.filename %></label>
+          <%= builder.check_box("delete_#{field_name}_#{attachment.blob_id}", label: "Delete this #{field_name.to_s.singularize}") %>
+        <% end %>
+      <% end %>
+    </div>
+
+    <%= builder.raw_file_field(field_name, class: 'active-storage__field', multiple: true, direct_upload: true) %>
+  <% end %>
+</div>
+
+
+
