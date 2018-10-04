@@ -4,6 +4,9 @@
       <% if attachment.blob.image? %>
         <%= link_to image_tag(main_app.rails_blob_url(attachment), class: 'active-storage__image'),
             main_app.rails_blob_url(attachment), target: 'blank' %>
+      <% elsif attachment.previewable? %>
+          <%= link_to image_tag(main_app.url_for(attachment.preview(resize: '300x300')), class: 'active-storage__image'),
+            main_app.url_for(attachment), target: 'blank' %>
       <% else %>
         <%= link_to(main_app.rails_blob_url(attachment), class: 'active-storage__link') %>
       <% end %>
