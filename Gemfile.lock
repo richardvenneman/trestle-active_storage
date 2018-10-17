@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    trestle-active_storage (0.0.1.pre.12)
-      rails (>= 5.2.0.beta2, < 6)
+    trestle-active_storage (2.0.0)
+      rails (>= 5.2, < 6)
       trestle (~> 0.8)
 
 GEM
@@ -87,7 +87,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     nio4r (2.3.1)
-    nokogiri (1.8.4)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     rack (2.0.5)
     rack-test (1.1.0)

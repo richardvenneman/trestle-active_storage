@@ -12,7 +12,6 @@ Trestle.ready(function() {
     var progressBarEl = field.parentNode.querySelectorAll(".progress-bar")[0];
 
     field.addEventListener("direct-upload:start", function(event) {
-      var detail = event.detail;
       progressEl.style = "display: block";
     });
 

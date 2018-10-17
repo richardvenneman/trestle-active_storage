@@ -1,6 +1,6 @@
-# Trestle ActiveStorage Integration (trestle-active_storage)
+# Trestle Active Storage Integration (trestle-active_storage)
 
-> [ActiveStorage](https://guides.rubyonrails.org/active_storage_overview.html) integration plugin for the [Trestle admin framework](https://trestle.io)
+> [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html) integration plugin for the [Trestle admin framework](https://trestle.io)
 
 [![Gem](https://img.shields.io/gem/v/trestle-active_storage.svg)](https://rubygems.org/gems/trestle-active_storage)
 
@@ -33,10 +33,17 @@ gem 'trestle-active_storage'
 
 Run `bundle install`, and then restart your Rails server.
 
+### Active Storage previews
+
+This plugin shows previews of uploaded files if your system meets the requirements. For more information please [consult the Ruby on Rails guides](https://edgeguides.rubyonrails.org/active_storage_overview.html#previewing-files).
+
+If you'd like to get up and running on Heroku, check out their [documentation on Active Storage on Heroku](https://devcenter.heroku.com/articles/active-storage-on-heroku#attachment-previews). The [Ruby on Rails Development Dependencies Install guide](https://edgeguides.rubyonrails.org/development_dependencies_install.html#active-storage-setup) outlines how to install the neccessary dependencies to get previews working locally.
+
 ## TODO / Wishlist
 
 - [ ] Support for `has_many_attached` attachments
-- [ ] Support for [ActiveStorage previews](https://api.rubyonrails.org/v5.2/classes/ActiveStorage/Previewer.html)
+- [x] Support for Active Storage previews
+- [ ] Preview of selected local file ([#1](https://github.com/richardvenneman/trestle-active_storage/issues/1))
 - [ ] Integration tests
 
 ## License
