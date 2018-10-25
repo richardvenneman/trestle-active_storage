@@ -23,6 +23,8 @@ Trestle.resource(:users) do
 end
 ```
 
+You can use the `active_storage_field` field type for both `has_one_attached` and `has_many_attached` attachments.
+
 ## Installation
 
 These instructions assume you have a working Trestle application. To integrate trestle-active_storage, first add it to your application's Gemfile:
@@ -41,10 +43,17 @@ If you'd like to get up and running on Heroku, check out their [documentation on
 
 ## TODO / Wishlist
 
-- [ ] Support for `has_many_attached` attachments
+- [x] Support for `has_many_attached` attachments
 - [x] Support for Active Storage previews
 - [ ] Preview of selected local file ([#1](https://github.com/richardvenneman/trestle-active_storage/issues/1))
 - [ ] Integration tests
+
+## Contributors
+
+| <img src="https://avatars.githubusercontent.com/richardvenneman?s=100" width="100" alt="richard venneman" /><br />[<sub>Richard Venneman</sub>](https://www.cityspotters.com)<br />[💻](https://github.com/richardvenneman/trestle-active_storage/commits?author=richardvenneman) [📖](https://github.com/richardvenneman/trestle-active_storage/commits?author=richardvenneman) 👀 | <img src="https://avatars.githubusercontent.com/tachyons?s=100" width="100" alt="aboobacker mk" /><br />[<sub>Aboobacker MK</sub>](http://aboobacker.in/)<br />💡 | <img src="https://avatars.githubusercontent.com/PunkMaldito?s=100" width="100" alt="rafael porto" /><br />[<sub>Rafael Porto</sub>](http://euodeiovoce.com.br/)<br />[💻](https://github.com/richardvenneman/trestle-active_storage/commits?author=PunkMaldito) |
+| :---: | :---: | :---: |
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
 
 ## License
 
