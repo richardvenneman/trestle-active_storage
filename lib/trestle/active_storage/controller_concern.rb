@@ -13,13 +13,29 @@ module Trestle
           self.instance = admin.find_instance(params)
 
           admin.active_storage_fields.each do |field|
-            instance.class.send(:attr_accessor, "delete_#{field}")
+            attachment = instance.send(field)
+
+            if attachment.respond_to?(:each)
+              attachment.each do |att|
+                instance.class.send(:attr_accessor, "delete_#{field}_#{att.blob_id}")
+              end
+            else
+              instance.class.send(:attr_accessor, "delete_#{field}")
+            end
           end
         end
 
         def purge_attachments
           admin.active_storage_fields.each do |field|
-            instance.send(field).purge if instance.try("delete_#{field}") == '1'
+            attachment = instance.send(field)
+
+            if attachment.respond_to?(:each)
+              attachment.each do |att|
+                att.purge if instance.try("delete_#{field}_#{att.blob_id}") == '1'
+              end
+            else
+              instance.send(field).purge if instance.try("delete_#{field}") == '1'
+            end
           end
         end
     end
