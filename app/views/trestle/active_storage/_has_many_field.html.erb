@@ -1,5 +1,5 @@
 <div class='nested-fields-container'>
-  <%= builder.fields_for :images do %>
+  <%= builder.fields_for field_name do %>
     <div class="active-storage">
       <% if attachments.attached? %>
         <% attachments.each do |attachment| %>
