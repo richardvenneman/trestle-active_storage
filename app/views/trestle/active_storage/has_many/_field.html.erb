@@ -1,0 +1,24 @@
+<%= builder.fields_for field_name do %>
+  <div class="active-storage">
+    <% if attachments.attached? %>
+      <% attachments.each do |attachment| %>
+        <div class="active-storage__preview">
+          <% if attachment.blob.image? %>
+            <%= render partial: 'trestle/active_storage/has_many/image',
+                       locals: { attachment: attachment,
+                                 field_name: field_name,
+                                 builder: builder } %>
+          <% else %>
+            <%= render partial: 'trestle/active_storage/has_one/default',
+                       locals: { attachment: attachment,
+                                 field_name: field_name,
+                                 builder: builder } %>
+          <% end %>
+        </div>
+        <hr>
+      <% end %>
+    <% end %>
+  </div>
+
+  <%= builder.raw_file_field(field_name, class: 'active-storage__field', multiple: true, direct_upload: true) %>
+<% end %>

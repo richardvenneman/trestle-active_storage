@@ -11,10 +11,10 @@ module Trestle
             locals[:field_name] = name
 
             if attachment.respond_to?(:each)
-              hash[:partial] = 'trestle/active_storage/has_many_field'
+              hash[:partial] = 'trestle/active_storage/has_many/field'
               locals[:attachments] = attachment
             else
-              hash[:partial] = 'trestle/active_storage/has_one_field'
+              hash[:partial] = 'trestle/active_storage/has_one/field'
               locals[:attachment] = attachment
             end
           end

@@ -1,0 +1,14 @@
+<% if attachment.variable? %>
+  <%= link_to image_tag(main_app.url_for(attachment.variant(resize: "300x300>")), class: "active-storage__image"),
+              main_app.rails_blob_path(attachment), target: 'blank' %>
+<% end %>
+
+<%= link_to main_app.rails_blob_path(attachment, disposition: "attachment"), class: "btn btn-info" do %>
+  <i class="fa fa-download"></i>
+  <span class="btn-label">Download <%= field_name.to_s.singularize %></span>
+<% end %>
+
+<div>
+  <small><%= attachment.blob.filename %></small>
+  <%= builder.check_box("delete_#{field_name}_#{attachment.blob_id}", label: "Delete this #{field_name.to_s.singularize}") %>
+</div>
