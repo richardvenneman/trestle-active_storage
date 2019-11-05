@@ -1,5 +1,5 @@
 <div class="active-storage">
-  <% if attachment.attached? %>
+  <% if attachment.attached? && builder.object.persisted? %>
     <div class="active-storage__preview">
       <% if attachment.previewable? %>
         <%= link_to image_tag(main_app.url_for(attachment.preview(resize: "300x300>")), class: "active-storage__image"),

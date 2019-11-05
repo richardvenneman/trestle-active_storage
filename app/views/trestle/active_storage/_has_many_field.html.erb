@@ -1,7 +1,7 @@
 <div class='nested-fields-container'>
   <%= builder.fields_for field_name do %>
     <div class="active-storage">
-      <% if attachments.attached? %>
+      <% if attachments.attached? && builder.object.persisted?  %>
         <% attachments.each do |attachment| %>
           <div class="active-storage__preview">
             <% if attachment.previewable? %>
