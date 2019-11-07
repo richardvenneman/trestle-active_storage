@@ -1,5 +1,4 @@
 # Trestle Active Storage Integration (trestle-active_storage)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 > [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html) integration plugin for the [Trestle admin framework](https://trestle.io)
 
@@ -51,6 +50,7 @@ If you'd like to get up and running on Heroku, check out their [documentation on
 
 ## Contributors
 
+Thanks goes out to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
 <table>
@@ -60,9 +60,6 @@ If you'd like to get up and running on Heroku, check out their [documentation on
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-| <img src="https://avatars.githubusercontent.com/richardvenneman?s=100" width="100" alt="richard venneman" /><br />[<sub>Richard Venneman</sub>](https://www.cityspotters.com)<br />[💻](https://github.com/richardvenneman/trestle-active_storage/commits?author=richardvenneman) [📖](https://github.com/richardvenneman/trestle-active_storage/commits?author=richardvenneman) 👀 | <img src="https://avatars.githubusercontent.com/tachyons?s=100" width="100" alt="aboobacker mk" /><br />[<sub>Aboobacker MK</sub>](http://aboobacker.in/)<br />💡 | <img src="https://avatars.githubusercontent.com/PunkMaldito?s=100" width="100" alt="rafael porto" /><br />[<sub>Rafael Porto</sub>](http://euodeiovoce.com.br/)<br />[💻](https://github.com/richardvenneman/trestle-active_storage/commits?author=PunkMaldito) |
-| :---: | :---: | :---: |
-
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
 
 ## License
