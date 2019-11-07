@@ -1,4 +1,5 @@
 # Trestle Active Storage Integration (trestle-active_storage)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 > [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html) integration plugin for the [Trestle admin framework](https://trestle.io)
 
@@ -50,6 +51,15 @@ If you'd like to get up and running on Heroku, check out their [documentation on
 
 ## Contributors
 
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/hoenth"><img src="https://avatars2.githubusercontent.com/u/62977?v=4" width="100px;" alt="Tom Hoen"/><br /><sub><b>Tom Hoen</b></sub></a><br /><a href="https://github.com/richardvenneman/trestle-active_storage/issues?q=author%3Ahoenth" title="Bug reports">🐛</a> <a href="https://github.com/richardvenneman/trestle-active_storage/commits?author=hoenth" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 | <img src="https://avatars.githubusercontent.com/richardvenneman?s=100" width="100" alt="richard venneman" /><br />[<sub>Richard Venneman</sub>](https://www.cityspotters.com)<br />[💻](https://github.com/richardvenneman/trestle-active_storage/commits?author=richardvenneman) [📖](https://github.com/richardvenneman/trestle-active_storage/commits?author=richardvenneman) 👀 | <img src="https://avatars.githubusercontent.com/tachyons?s=100" width="100" alt="aboobacker mk" /><br />[<sub>Aboobacker MK</sub>](http://aboobacker.in/)<br />💡 | <img src="https://avatars.githubusercontent.com/PunkMaldito?s=100" width="100" alt="rafael porto" /><br />[<sub>Rafael Porto</sub>](http://euodeiovoce.com.br/)<br />[💻](https://github.com/richardvenneman/trestle-active_storage/commits?author=PunkMaldito) |
 | :---: | :---: | :---: |
 
