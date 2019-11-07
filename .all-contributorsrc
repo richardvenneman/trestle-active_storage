@@ -35,6 +35,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "hoenth",
+      "name": "Tom Hoen",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/62977?v=4",
+      "profile": "https://github.com/hoenth",
+      "contributions": [
+        "bug",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
