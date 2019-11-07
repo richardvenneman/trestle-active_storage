@@ -50,9 +50,16 @@ If you'd like to get up and running on Heroku, check out their [documentation on
 
 ## Contributors
 
-| <img src="https://avatars.githubusercontent.com/richardvenneman?s=100" width="100" alt="richard venneman" /><br />[<sub>Richard Venneman</sub>](https://www.cityspotters.com)<br />[💻](https://github.com/richardvenneman/trestle-active_storage/commits?author=richardvenneman) [📖](https://github.com/richardvenneman/trestle-active_storage/commits?author=richardvenneman) 👀 | <img src="https://avatars.githubusercontent.com/tachyons?s=100" width="100" alt="aboobacker mk" /><br />[<sub>Aboobacker MK</sub>](http://aboobacker.in/)<br />💡 | <img src="https://avatars.githubusercontent.com/PunkMaldito?s=100" width="100" alt="rafael porto" /><br />[<sub>Rafael Porto</sub>](http://euodeiovoce.com.br/)<br />[💻](https://github.com/richardvenneman/trestle-active_storage/commits?author=PunkMaldito) |
-| :---: | :---: | :---: |
+Thanks goes out to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.cityspotters.com"><img src="https://avatars1.githubusercontent.com/u/75705?v=4" width="100px;" alt="Richard Venneman"/><br /><sub><b>Richard Venneman</b></sub></a><br /><a href="#ideas-richardvenneman" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/richardvenneman/trestle-active_storage/commits?author=richardvenneman" title="Code">💻</a> <a href="https://github.com/richardvenneman/trestle-active_storage/commits?author=richardvenneman" title="Documentation">📖</a> <a href="#question-richardvenneman" title="Answering Questions">💬</a> <a href="#review-richardvenneman" title="Reviewed Pull Requests">👀</a></td>
+  </tr>
+</table>
 
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
 
 ## License

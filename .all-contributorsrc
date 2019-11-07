@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "richardvenneman",
+      "name": "Richard Venneman",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/75705?v=4",
+      "profile": "https://www.cityspotters.com",
+      "contributions": [
+        "ideas",
+        "code",
+        "doc",
+        "question",
+        "review"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "trestle-active_storage",
+  "projectOwner": "richardvenneman",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
