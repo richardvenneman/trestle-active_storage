@@ -1,5 +1,4 @@
 # Trestle Active Storage Integration (trestle-active_storage)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 > [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html) integration plugin for the [Trestle admin framework](https://trestle.io)
 
