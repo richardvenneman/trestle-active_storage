@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "hoenth",
+      "name": "Tom Hoen",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/62977?v=4",
+      "profile": "https://github.com/hoenth",
+      "contributions": [
+        "bug",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "trestle-active_storage",
+  "projectOwner": "richardvenneman",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
