@@ -6,6 +6,37 @@
   "commit": false,
   "contributors": [
     {
+      "login": "richardvenneman",
+      "name": "Richard Venneman",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/75705?v=4",
+      "profile": "https://www.cityspotters.com",
+      "contributions": [
+        "ideas",
+        "code",
+        "doc",
+        "question",
+        "review"
+      ]
+    },
+    {
+      "login": "tachyons",
+      "name": "Aboobacker MK",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/3112976?v=4",
+      "profile": "http://aboobacker.in",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "PunkMaldito",
+      "name": "Rafael Porto",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1027961?v=4",
+      "profile": "http://euodeiovoce.com.br",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
       "login": "hoenth",
       "name": "Tom Hoen",
       "avatar_url": "https://avatars2.githubusercontent.com/u/62977?v=4",
