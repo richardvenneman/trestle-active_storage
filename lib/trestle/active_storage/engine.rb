@@ -4,7 +4,7 @@ module Trestle
       config.assets.precompile << 'activestorage.js' << 'trestle/active_storage_fields.js'
 
       config.to_prepare do
-        Trestle::ResourceController.send(:prepend, Trestle::ActiveStorage::ControllerConcern)
+        Trestle::ResourceController.send(:include, Trestle::ActiveStorage::ControllerConcern)
       end
 
       initializer :extensions do
