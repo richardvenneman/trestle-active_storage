@@ -45,11 +45,21 @@
         "bug",
         "code"
       ]
+    },
+    {
+      "login": "basharabdullah",
+      "name": "Bashar Abdullah",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/167290?v=4",
+      "profile": "https://github.com/basharabdullah",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "trestle-active_storage",
   "projectOwner": "richardvenneman",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
