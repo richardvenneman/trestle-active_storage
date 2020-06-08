@@ -45,11 +45,21 @@
         "bug",
         "code"
       ]
+    },
+    {
+      "login": "McRipper",
+      "name": "Emanuele Barban",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/58031?v=4",
+      "profile": "https://github.com/McRipper",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "trestle-active_storage",
   "projectOwner": "richardvenneman",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
