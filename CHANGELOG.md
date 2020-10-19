@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.1] - 2020-10-19
+- Display download link and delete checkbox only if attachment persisted (closes [#71](https://github.com/richardvenneman/trestle-active_storage/issues/71),  (thanks @oleg-kiviljov!)
+
 ## [3.0.0] - 2020-06-08
 - Rails 6 compatibility (closes [#41](https://github.com/richardvenneman/trestle-active_storage/issues/41), [#58](https://github.com/richardvenneman/trestle-active_storage/issues/58), thanks @McRipper!)
 
