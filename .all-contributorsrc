@@ -63,6 +63,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "oleg-kiviljov",
+      "name": "Oleg Kiviljov",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/10065250?v=4",
+      "profile": "https://github.com/oleg-kiviljov",
+      "contributions": [
+        "bug",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
