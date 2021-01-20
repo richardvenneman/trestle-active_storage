@@ -15,13 +15,13 @@
                 <i class="fa fa-download"></i>
                 <span class="btn-label">Download <%= field_name %></span>
               <% end %>
-              <div>
-                <small><%= attachment.blob.filename %></small>
-                <%= builder.check_box("delete_#{field_name}_#{attachment.blob_id}", label: "Delete this #{field_name.to_s.singularize}") %>
-              </div>
             <% else %>
               <small><%= attachment.blob.filename %></small>
             <% end %>
+            <div>
+              <small><%= attachment.blob.filename %></small>
+              <%= builder.check_box("delete_#{field_name}_#{attachment.blob_id}", label: "Delete this #{field_name.to_s.singularize}") %>
+            </div>
           </div>
           <hr>
         <% end %>
