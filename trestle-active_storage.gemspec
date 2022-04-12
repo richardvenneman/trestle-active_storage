@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
   s.require_paths = ['lib']
 
-  s.add_dependency 'rails', '>= 5.2', '< 7'
+  s.add_dependency 'rails', '>= 5.2'
   s.add_dependency "trestle", "~> 0.9.0", ">= 0.9.3"
 end
