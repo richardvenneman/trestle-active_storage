@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     trestle-active_storage (3.0.1)
-      rails (~> 7, >= 5.2)
+      rails (>= 5.2, < 8)
       trestle (~> 0.9, >= 0.9.3)
 
 GEM
