@@ -10,11 +10,13 @@
             <% elsif attachment.variable? %>
               <%= link_to image_tag(main_app.url_for(attachment.variant(resize_to_limit: [300, 300])), class: "active-storage__image"),
                           main_app.rails_blob_path(attachment, disposition: "attachment") %>
-            <% elsif attachment.persisted? %>
+            <% else %>
               <%= link_to main_app.rails_blob_path(attachment, disposition: "attachment"), class: "btn btn-info" do %>
                 <i class="fa fa-download"></i>
                 <span class="btn-label">Download <%= field_name %></span>
               <% end %>
+            <% end %>
+            <% if attachment.persisted? %>
               <div>
                 <small><%= attachment.blob.filename %></small>
                 <%= builder.check_box("delete_#{field_name}_#{attachment.blob_id.to_s.gsub('-', '')}", label: "Delete this #{field_name.to_s.singularize}") %>
