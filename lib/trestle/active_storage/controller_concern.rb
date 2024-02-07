@@ -25,7 +25,7 @@ module Trestle
       end
 
       def attach_attachments
-        return if @removed_attachments.nil? || @removed_attachments.empty?
+        return if @removed_attachments.blank?
 
         @removed_attachments.each do |field, attachments|
           instance.send(field).attach(attachments)
